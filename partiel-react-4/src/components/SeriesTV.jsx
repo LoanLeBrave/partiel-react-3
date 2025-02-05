@@ -19,11 +19,12 @@ const SeriesTV = () => {
 
     return (
         <div
-            className="series-tv-container container"
+            className="series-tv-container"
             style={{
                 backgroundColor: '#f0f0f0', // Fond grisé
                 padding: '1rem',
-                marginTop: '2rem'
+                marginTop: '2rem',
+                width: '100%' // S'assure que le fond va jusqu'au bout
             }}
         >
             <div className="title-filter" id="title-series-tv">
@@ -45,7 +46,14 @@ const SeriesTV = () => {
                     </button>
                 </div>
             </div>
-            <div className="grid-series-tv">
+            <div
+                className="grid-series-tv"
+                style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+                    gap: '1rem'
+                }}
+            >
                 {series.map((serie) => (
                     <MovieCard key={serie.id} movie={serie} type="tv" />
                 ))}

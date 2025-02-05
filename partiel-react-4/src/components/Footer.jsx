@@ -7,9 +7,9 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-categories">
-                    <span>Films</span>
-                    <span>Séries</span>
-                    <span>Populaires</span>
+                    <button>Films</button>
+                    <button>Séries</button>
+                    <button>Populaires</button>
                 </div>
             </div>
         </footer>

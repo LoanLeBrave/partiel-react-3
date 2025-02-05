@@ -1,7 +1,7 @@
 .footer {
-    background-color: #000; /* Fond noir */
+    background-color: #000;
     padding: 1rem;
-    color: #fff; /* Texte blanc */
+    color: #fff;
 }
 
 .footer-content {
@@ -14,7 +14,18 @@
     margin: 0;
 }
 
-.footer-categories span {
-    font-weight: bold;
-    margin-left: 1rem;
+.footer-categories button { /* Style pour les boutons seulement */
+    background: none; /* Supprime le fond gris par défaut */
+    border: none; /* Supprime la bordure par défaut */
+    color: #fff; /* Texte blanc */
+    font-weight: bold; /* Texte en gras */
+    padding: 0.5rem 1rem; /* Ajoute un peu d'espace autour du texte */
+    margin: 0 0.5rem; /* Ajoute un peu d'espace entre les boutons */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: color 0.3s ease; /* Animation pour la couleur au survol */
+}
+
+.footer-categories button:hover {
+    color: #f0f0f0; /* Couleur du texte au survol (gris clair) */
+    text-decoration: underline; /* Souligne le texte au survol */
 }

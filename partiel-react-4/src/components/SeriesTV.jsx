@@ -1,4 +1,3 @@
-// src/components/SeriesTV.jsx
 import React, { useEffect, useState } from 'react';
 import { getTrendingMovies } from '../services/api'; // On réutilise la fonction en passant type "tv"
 import MovieCard from './MovieCard';

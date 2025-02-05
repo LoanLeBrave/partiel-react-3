@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React from 'react';
 import '../styles/Footer.css'; // Assurez-vous d'avoir ce fichier CSS
 

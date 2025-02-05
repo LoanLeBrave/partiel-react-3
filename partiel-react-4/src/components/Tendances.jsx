@@ -1,4 +1,3 @@
-// src/components/Tendances.jsx
 import React, { useEffect, useState } from 'react';
 import { getTrendingMovies } from '../services/api';
 import MovieCard from './MovieCard'; // Ce composant doit afficher la carte d'un film

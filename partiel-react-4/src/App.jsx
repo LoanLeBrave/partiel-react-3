@@ -5,6 +5,7 @@ import NotFound from './pages/NotFound.jsx';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Tendances from "./components/Tendances.jsx";
+import SearchBar from "./components/SearchBar.jsx";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
+            <SearchBar></SearchBar>
             <Tendances></Tendances>
         </>
     );

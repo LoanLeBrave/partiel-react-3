@@ -189,7 +189,7 @@
 }
 
 .search-container {
-  background: url("./../img/thor.jpg");
+  background: url("../img/thor.jpg");
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -403,7 +403,7 @@
 
 .focus-container .banner {
   background-repeat: no-repeat;
-  background-image: url("./../img/bg.png");
+  background-image: url("../img/bg.png");
 
   width: 100%;
   display: -webkit-box;

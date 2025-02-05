@@ -11,11 +11,6 @@ import SeriesTV from "./components/SeriesTV.jsx";
 function App() {
     return (
         <>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/movie/:id" element={<MovieDetails />} />
-                <Route path="*" element={<NotFound />} />
-            </Routes>
             <Footer />
             <SearchBar></SearchBar>
             <Tendances></Tendances>

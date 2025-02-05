@@ -3,7 +3,11 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif; /* Ajout de la police de secours */
+}
+
+html, body { /* Pour s'assurer que la police s'applique à toute la page */
+    font-family: "Roboto", sans-serif;
 }
 
 .wrapper {

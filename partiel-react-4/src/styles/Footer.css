@@ -19,6 +19,7 @@
     border: none; /* Supprime la bordure par défaut */
     color: #fff; /* Texte blanc */
     font-weight: bold; /* Texte en gras */
+    font-size: 20px; /* Taille de police de base (vous pouvez ajuster) */
     padding: 0.5rem 1rem; /* Ajoute un peu d'espace autour du texte */
     margin: 0 0.5rem; /* Ajoute un peu d'espace entre les boutons */
     cursor: pointer; /* Change le curseur au survol */

@@ -1,0 +1,20 @@
+.footer {
+    background-color: #000; /* Fond noir */
+    padding: 1rem;
+    color: #fff; /* Texte blanc */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+.footer-categories span {
+    font-weight: bold;
+    margin-left: 1rem;
+}

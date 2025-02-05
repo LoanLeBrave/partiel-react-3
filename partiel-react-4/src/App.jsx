@@ -10,7 +10,6 @@ import SearchBar from "./components/SearchBar.jsx";
 function App() {
     return (
         <>
-            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/movie/:id" element={<MovieDetails />} />

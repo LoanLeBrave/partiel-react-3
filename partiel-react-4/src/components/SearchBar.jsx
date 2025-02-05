@@ -116,8 +116,9 @@ const SearchBar = () => {
                             className="grid-search-results"
                             style={{
                                 display: 'grid',
-                                gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-                                gap: '1rem'
+                                gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', // Ajuste des colonnes
+                                gap: '1.5rem',
+                                padding: '1rem'
                             }}
                         >
                             {results.map((movie) => (

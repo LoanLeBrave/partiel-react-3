@@ -15,14 +15,15 @@ const Tendances = () => {
     }, [filter]);
 
     return (
-        <div className="tendances-container container">
-            <div className="title-filter" id="title-tendances">
-                <h2>Tendances</h2>
-                <div>
+        <div className="tendances-container container" style={{ padding: '0 2rem' }}>
+            <div className="title-filter" id="title-tendances" style={{ marginBottom: '1.5rem' }}>
+                <h2 style={{ marginLeft: '1rem' }}>Tendances</h2>
+                <div style={{ marginLeft: '1rem' }}>
                     <button
                         className={filter === 'day' ? 'active' : ''}
                         id="day"
                         onClick={() => setFilter('day')}
+                        style={{ marginRight: '0.5rem' }}
                     >
                         Aujourd'hui
                     </button>
@@ -35,7 +36,7 @@ const Tendances = () => {
                     </button>
                 </div>
             </div>
-            <div className="grid-tendances">
+            <div className="grid-tendances" style={{ padding: '0 1rem' }}>
                 {movies.map((movie) => (
                     <MovieCard key={movie.id} movie={movie} type="movie" />
                 ))}

@@ -8,7 +8,6 @@ const SeriesTV = () => {
 
     useEffect(() => {
         const fetchTrendingSeries = async () => {
-            // On utilise la même fonction que pour les films tendances, mais on demande le type "tv"
             const data = await getTrendingMovies('tv', filter);
             setSeries(data);
         };
@@ -21,18 +20,19 @@ const SeriesTV = () => {
             className="series-tv-container"
             style={{
                 backgroundColor: '#f0f0f0', // Fond grisé
-                padding: '1rem',
+                padding: '2rem', // Ajout de padding pour éviter que le contenu colle aux bords
                 marginTop: '2rem',
-                width: '100%' // S'assure que le fond va jusqu'au bout
+                width: '100%'
             }}
         >
-            <div className="title-filter" id="title-series-tv">
-                <h2>Séries TV</h2>
-                <div>
+            <div className="title-filter" id="title-series-tv" style={{ marginBottom: '1.5rem' }}>
+                <h2 style={{ marginLeft: '1rem' }}>Séries TV</h2>
+                <div style={{ marginLeft: '1rem' }}>
                     <button
                         className={filter === 'day' ? 'active' : ''}
                         id="day"
                         onClick={() => setFilter('day')}
+                        style={{ marginRight: '0.5rem' }}
                     >
                         Aujourd'hui
                     </button>
@@ -50,7 +50,8 @@ const SeriesTV = () => {
                 style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-                    gap: '1rem'
+                    gap: '1rem',
+                    padding: '0 1rem' // Ajout d'un padding latéral pour éviter que les films touchent les bords
                 }}
             >
                 {series.map((serie) => (

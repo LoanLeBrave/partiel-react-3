@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Tendances from "./components/Tendances.jsx";
 import SearchBar from "./components/SearchBar.jsx";
+import SeriesTV from "./components/SeriesTV.jsx";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <Footer />
             <SearchBar></SearchBar>
             <Tendances></Tendances>
+            <SeriesTV></SeriesTV>
         </>
     );
 }
